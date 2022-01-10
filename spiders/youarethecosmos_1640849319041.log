@@ -1,0 +1,571 @@
+2021-12-30 15:28:39 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: overseaSpider)
+2021-12-30 15:28:39 [scrapy.utils.log] INFO: Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.19041-SP0
+2021-12-30 15:28:39 [scrapy.crawler] INFO: Overridden settings:
+{'ASYNCIO_EVENT_LOOP': 'asyncio.SelectorEventLoop',
+ 'BOT_NAME': 'overseaSpider',
+ 'COMMANDS_MODULE': 'overseaSpider.commands',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 10,
+ 'HTTPCACHE_EXPIRATION_SECS': 604800,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [403, 301, 401, 500, 503],
+ 'HTTPCACHE_POLICY': 'overseaSpider.middlewares.DummyPolicy',
+ 'LOG_FILE': 'youarethecosmos_1640849319041.log',
+ 'NEWSPIDER_MODULE': 'overseaSpider.spiders',
+ 'RETRY_ENABLED': False,
+ 'RETRY_TIMES': 1,
+ 'SPIDER_MODULES': ['overseaSpider.spiders'],
+ 'TEMPLATES_DIR': 'D:\\templatespider\\overseaSpider\\templates'}
+2021-12-30 15:28:39 [scrapy.extensions.telnet] INFO: Telnet Password: 9ed7f8106133f988
+2021-12-30 15:28:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-12-30 15:28:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['overseaSpider.middlewares.OverseaspiderUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-12-30 15:28:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-12-30 15:28:39 [scrapy.middleware] INFO: Enabled item pipelines:
+['overseaSpider.pipelines.OverseaspiderPipeline']
+2021-12-30 15:28:39 [scrapy.core.engine] INFO: Spider opened
+2021-12-30 15:28:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-12-30 15:28:39 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-12-30 15:28:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/> (referer: None)
+2021-12-30 15:28:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/category/lp-yatcosmos> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:28:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/anton-barbeau> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:28:42 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.youarethecosmos.com/product/limited-offer-lp> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2021-12-30 15:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/deadbeat-poets> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:28:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/baroque-world-series> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:28:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/disco-pantera> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:28:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/the-golden-rail-sometimes-when-lp> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:28:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:28:48 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/273409133/goldenr.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 324495
+2021-12-30 15:28:49 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:28:49 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:28:49 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:28:49 [overseaSpider.pipelines] INFO: scrapy              0              items
+2021-12-30 15:28:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/the-golden-rail-sometimes-when-lp>
+None
+2021-12-30 15:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/jacobites> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:28:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:28:50 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/277898348/jacweb133.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 339965
+2021-12-30 15:28:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:28:51 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:28:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:28:51 [overseaSpider.pipelines] INFO: scrapy              1              items
+2021-12-30 15:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/jacobites>
+None
+2021-12-30 15:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/velvet-crush> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:28:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:28:53 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/284844315/vc.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 288064
+2021-12-30 15:28:53 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:28:53 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:28:53 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:28:53 [overseaSpider.pipelines] INFO: scrapy              2              items
+2021-12-30 15:28:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/velvet-crush>
+None
+2021-12-30 15:28:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/7-collection> (referer: https://www.youarethecosmos.com/artist/baroque-world-series)
+2021-12-30 15:28:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:28:55 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/270673658/7single.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 2403021
+2021-12-30 15:28:56 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:28:56 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:28:56 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:28:56 [overseaSpider.pipelines] INFO: scrapy              3              items
+2021-12-30 15:28:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/7-collection>
+None
+2021-12-30 15:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/reno-bo> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:28:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:28:59 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/270668507/reno+bo.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 800717
+2021-12-30 15:29:00 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:00 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:00 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:00 [overseaSpider.pipelines] INFO: scrapy              4              items
+2021-12-30 15:29:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/reno-bo>
+None
+2021-12-30 15:29:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/curt-boettcher> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:02 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/286163796/curt.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 360480
+2021-12-30 15:29:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:02 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:02 [overseaSpider.pipelines] INFO: scrapy              5              items
+2021-12-30 15:29:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/curt-boettcher>
+None
+2021-12-30 15:29:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/hearts-arrows> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:05 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/262181609/BLUEPNGfinal11.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 806105
+2021-12-30 15:29:06 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:06 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:06 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:06 [overseaSpider.pipelines] INFO: scrapy              6              items
+2021-12-30 15:29:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/hearts-arrows>
+None
+2021-12-30 15:29:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/john-howard> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:08 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/285913224/john+final.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 323373
+2021-12-30 15:29:09 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:09 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:09 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:09 [overseaSpider.pipelines] INFO: scrapy              7              items
+2021-12-30 15:29:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/john-howard>
+None
+2021-12-30 15:29:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/twelve-string-high-2lp-cd> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:11 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/262164311/12cd1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 666355
+2021-12-30 15:29:12 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:12 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:12 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:12 [overseaSpider.pipelines] INFO: scrapy              8              items
+2021-12-30 15:29:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/twelve-string-high-2lp-cd>
+None
+2021-12-30 15:29:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/the-parson-red-heads-lifetime-of-comedy-lp-cd-poster> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:14 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/284306022/PARSON+COVERrr.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 456353
+2021-12-30 15:29:15 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:15 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:15 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:15 [overseaSpider.pipelines] INFO: scrapy              9              items
+2021-12-30 15:29:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/the-parson-red-heads-lifetime-of-comedy-lp-cd-poster>
+None
+2021-12-30 15:29:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/edwards-hand> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:16 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:17 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/315046878/EDW.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 429622
+2021-12-30 15:29:18 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:18 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:18 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:18 [overseaSpider.pipelines] INFO: scrapy              10              items
+2021-12-30 15:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/edwards-hand>
+None
+2021-12-30 15:29:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/evensong> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:21 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/316737606/evensong+final.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 478604
+2021-12-30 15:29:21 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:21 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:21 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:21 [overseaSpider.pipelines] INFO: scrapy              11              items
+2021-12-30 15:29:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/evensong>
+None
+2021-12-30 15:29:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/limited-offer-lp> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:24 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/320316039/specialoffer1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 470774
+2021-12-30 15:29:24 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:24 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:24 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:24 [overseaSpider.pipelines] INFO: scrapy              12              items
+2021-12-30 15:29:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/limited-offer-lp>
+None
+2021-12-30 15:29:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/lp-offer-you-are-the-cosmos> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:25 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:27 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/320321445/specialoffer2.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 441256
+2021-12-30 15:29:28 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:28 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:28 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:28 [overseaSpider.pipelines] INFO: scrapy              13              items
+2021-12-30 15:29:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/lp-offer-you-are-the-cosmos>
+None
+2021-12-30 15:29:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/josh-rouse> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/lolas-all-the-potion-in-the-world-lp> (referer: https://www.youarethecosmos.com/category/lp-yatcosmos)
+2021-12-30 15:29:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:31 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/324527697/lolas+d1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 260997
+2021-12-30 15:29:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:32 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:32 [overseaSpider.pipelines] INFO: scrapy              14              items
+2021-12-30 15:29:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/lolas-all-the-potion-in-the-world-lp>
+None
+2021-12-30 15:29:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/ora> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-carousels> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/bart-davenport> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/dr-cosmo-s-tape-lab> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/andy-reed> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/ken-sharp> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:39 [scrapy.extensions.logstats] INFO: Crawled 28 pages (at 28 pages/min), scraped 15 items (at 15 items/min)
+2021-12-30 15:29:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/diamond-hands> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/wade-jackson> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/david-brookings> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-lunar-laugh> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/blue-ash> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/daniel-wylie> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-golden-rail> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/ronnie-d-addario> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/cd-free-shipping> (referer: https://www.youarethecosmos.com/artist/the-lunar-laugh)
+2021-12-30 15:29:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:51 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/270673805/CD_1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 2375934
+2021-12-30 15:29:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:52 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:52 [overseaSpider.pipelines] INFO: scrapy              15              items
+2021-12-30 15:29:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/cd-free-shipping>
+None
+2021-12-30 15:29:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/jacobites> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/daniel-mcgeever> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/mikah-wilson> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:29:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/ronnie-d-addario-cd> (referer: https://www.youarethecosmos.com/artist/ronnie-d-addario)
+2021-12-30 15:29:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:29:58 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/262180244/ronnie.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 1002230
+2021-12-30 15:29:59 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:29:59 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:29:59 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:29:59 [overseaSpider.pipelines] INFO: scrapy              16              items
+2021-12-30 15:29:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/ronnie-d-addario-cd>
+None
+2021-12-30 15:29:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/soft-hearted-scientists> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-toms> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/salto> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/velvet-crush> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/john-howard> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/curt-boettcher> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/the-toms-selections-from-the-1979-sessiones-7-ep> (referer: https://www.youarethecosmos.com/artist/the-toms)
+2021-12-30 15:30:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:30:10 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/273409223/toms3.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 188545
+2021-12-30 15:30:10 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:30:10 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:30:10 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:30:10 [overseaSpider.pipelines] INFO: scrapy              17              items
+2021-12-30 15:30:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/the-toms-selections-from-the-1979-sessiones-7-ep>
+None
+2021-12-30 15:30:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/nick-eng> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/evan-thomas-way> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/twelve-string-high> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/parting-lines> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/nelson-bragg> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/sunset-canyoneers> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-raves> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/twelve-string-high-on-cd> (referer: https://www.youarethecosmos.com/artist/twelve-string-high)
+2021-12-30 15:30:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:30:22 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/262163774/12cd.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 488661
+2021-12-30 15:30:22 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:30:22 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:30:22 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:30:22 [overseaSpider.pipelines] INFO: scrapy              18              items
+2021-12-30 15:30:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/twelve-string-high-on-cd>
+None
+2021-12-30 15:30:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-exits> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-pencils> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/sunset-canyoneers-lp-> (referer: https://www.youarethecosmos.com/artist/sunset-canyoneers)
+2021-12-30 15:30:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:30:30 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/276092765/sunsetcan.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 1269127
+2021-12-30 15:30:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:30:30 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:30:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:30:30 [overseaSpider.pipelines] INFO: scrapy              19              items
+2021-12-30 15:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/sunset-canyoneers-lp->
+None
+2021-12-30 15:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/separately-breakers-bozos-phil-neal-telefones-the-shy-pencils-exits-raves> (referer: https://www.youarethecosmos.com/artist/the-raves)
+2021-12-30 15:30:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:30:33 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/322462653/PPop+collection.jpg?auto=format&fit=max&w=1500 HTTP/1.1" 200 376847
+2021-12-30 15:30:34 [overseaSpider.pipelines] INFO: scrapy              20              items
+2021-12-30 15:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/separately-breakers-bozos-phil-neal-telefones-the-shy-pencils-exits-raves>
+None
+2021-12-30 15:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-top-boost> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-shy> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-telefones> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/reno-bo> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:39 [scrapy.extensions.logstats] INFO: Crawled 64 pages (at 36 pages/min), scraped 21 items (at 6 items/min)
+2021-12-30 15:30:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/shoes> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/reno-bo-shoes-top-boost-7> (referer: https://www.youarethecosmos.com/artist/the-top-boost)
+2021-12-30 15:30:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:30:43 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/322467465/7single3.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 400994
+2021-12-30 15:30:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:30:44 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:30:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:30:44 [overseaSpider.pipelines] INFO: scrapy              21              items
+2021-12-30 15:30:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/reno-bo-shoes-top-boost-7>
+None
+2021-12-30 15:30:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-parson-red-heads> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/bozos> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/phil-neal> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/breakers> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/orange-humble-band> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/lolas> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/record-prayer-collection> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/edwards-hand> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/the-letters> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/buzzcocks> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/artist/evensong> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:30:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/separately-norma-lee-mack-rice-maynell-wilson-timi-yuro> (referer: https://www.youarethecosmos.com/artist/record-prayer-collection)
+2021-12-30 15:30:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:00 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/313521225/RP4.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 1374185
+2021-12-30 15:31:01 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:01 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:01 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:01 [overseaSpider.pipelines] INFO: scrapy              22              items
+2021-12-30 15:31:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/separately-norma-lee-mack-rice-maynell-wilson-timi-yuro>
+None
+2021-12-30 15:31:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/category/sold-out> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:31:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/category/offers> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:31:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/category/7-other-labels> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:31:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/category/cd-other-labels> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:31:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/category/lp-other-labels> (referer: https://www.youarethecosmos.com/)
+2021-12-30 15:31:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/outofstock> (referer: https://www.youarethecosmos.com/category/sold-out)
+2021-12-30 15:31:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:09 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/262053995/Sin+t%C3%ADtulo-21111.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 3371637
+2021-12-30 15:31:10 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:10 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:10 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:10 [overseaSpider.pipelines] INFO: scrapy              23              items
+2021-12-30 15:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/outofstock>
+None
+2021-12-30 15:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/dick-dale-surfer-s-choice> (referer: https://www.youarethecosmos.com/category/offers)
+2021-12-30 15:31:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:12 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/302664771/DICK+DALE+PNG.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 375873
+2021-12-30 15:31:13 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:13 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:13 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:13 [overseaSpider.pipelines] INFO: scrapy              24              items
+2021-12-30 15:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/dick-dale-surfer-s-choice>
+None
+2021-12-30 15:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/7-sge-ep> (referer: https://www.youarethecosmos.com/category/7-other-labels)
+2021-12-30 15:31:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:15 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/282145907/72.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 452011
+2021-12-30 15:31:16 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:16 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:16 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:16 [overseaSpider.pipelines] INFO: scrapy              25              items
+2021-12-30 15:31:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/7-sge-ep>
+None
+2021-12-30 15:31:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/cd-soul-r-n-b> (referer: https://www.youarethecosmos.com/category/cd-other-labels)
+2021-12-30 15:31:17 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:18 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/282149753/cd55.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 343690
+2021-12-30 15:31:19 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:19 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:19 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:19 [overseaSpider.pipelines] INFO: scrapy              26              items
+2021-12-30 15:31:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/cd-soul-r-n-b>
+None
+2021-12-30 15:31:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/the-surfites-lp-albert-gines-lp> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:22 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/248296991/last_cop1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 437389
+2021-12-30 15:31:22 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:22 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:22 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:22 [overseaSpider.pipelines] INFO: scrapy              27              items
+2021-12-30 15:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/the-surfites-lp-albert-gines-lp>
+None
+2021-12-30 15:31:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/lp-surf-instro-exotica> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:25 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/282134969/EXOT.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 198894
+2021-12-30 15:31:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:25 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:25 [overseaSpider.pipelines] INFO: scrapy              28              items
+2021-12-30 15:31:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/lp-surf-instro-exotica>
+None
+2021-12-30 15:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/pop-indie-jangle-lp-from> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:29 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/282133256/INDIEPOP.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 916827
+2021-12-30 15:31:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:30 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:30 [overseaSpider.pipelines] INFO: scrapy              29              items
+2021-12-30 15:31:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/pop-indie-jangle-lp-from>
+None
+2021-12-30 15:31:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/r-n-r-garage-pt-3> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:32 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/282114095/GARAGEFINAL.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 184561
+2021-12-30 15:31:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:32 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:32 [overseaSpider.pipelines] INFO: scrapy              30              items
+2021-12-30 15:31:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/r-n-r-garage-pt-3>
+None
+2021-12-30 15:31:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/powerpop-lps-see-stock> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:34 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/282046181/POWER1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 191813
+2021-12-30 15:31:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:35 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:35 [overseaSpider.pipelines] INFO: scrapy              31              items
+2021-12-30 15:31:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/powerpop-lps-see-stock>
+None
+2021-12-30 15:31:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/-other-folk-psych-labels-lp> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:37 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/282048710/SYD.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 362902
+2021-12-30 15:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:38 [overseaSpider.pipelines] INFO: scrapy              32              items
+2021-12-30 15:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/-other-folk-psych-labels-lp>
+None
+2021-12-30 15:31:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/soul-rnb> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:38 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:40 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/282035966/SOUL.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 278219
+2021-12-30 15:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:40 [overseaSpider.pipelines] INFO: scrapy              33              items
+2021-12-30 15:31:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/soul-rnb>
+None
+2021-12-30 15:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/robert-mitchum-calypso-is-like-so-lp> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:40 [scrapy.extensions.logstats] INFO: Crawled 95 pages (at 31 pages/min), scraped 34 items (at 13 items/min)
+2021-12-30 15:31:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:42 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/277560746/other+labels5555555.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 394377
+2021-12-30 15:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:43 [overseaSpider.pipelines] INFO: scrapy              34              items
+2021-12-30 15:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/robert-mitchum-calypso-is-like-so-lp>
+None
+2021-12-30 15:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/the-revillos-lps> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:45 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/299518023/revillos+final.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 316825
+2021-12-30 15:31:45 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:45 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:45 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:45 [overseaSpider.pipelines] INFO: scrapy              35              items
+2021-12-30 15:31:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/the-revillos-lps>
+None
+2021-12-30 15:31:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/link-wray-wraymen-the-original-1958-cadence-sessions> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:47 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/312918276/link+1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 273607
+2021-12-30 15:31:47 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:47 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:47 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:47 [overseaSpider.pipelines] INFO: scrapy              36              items
+2021-12-30 15:31:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/link-wray-wraymen-the-original-1958-cadence-sessions>
+None
+2021-12-30 15:31:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/doris-duke-i-m-a-loser-lp> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:49 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/318209988/doris+2.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 348172
+2021-12-30 15:31:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:50 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:50 [overseaSpider.pipelines] INFO: scrapy              37              items
+2021-12-30 15:31:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/doris-duke-i-m-a-loser-lp>
+None
+2021-12-30 15:31:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/fleur-lp> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:52 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/308479626/FLEUR+_1_.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 422743
+2021-12-30 15:31:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:52 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:52 [overseaSpider.pipelines] INFO: scrapy              38              items
+2021-12-30 15:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/fleur-lp>
+None
+2021-12-30 15:31:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/ithaca> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:54 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/301133931/ITHACA+PNG.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 324973
+2021-12-30 15:31:55 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:55 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:55 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:55 [overseaSpider.pipelines] INFO: scrapy              39              items
+2021-12-30 15:31:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/ithaca>
+None
+2021-12-30 15:31:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/agincourt-fly-away> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:31:57 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/301133859/AGINCOURT+PNG.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 338840
+2021-12-30 15:31:58 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:31:58 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:31:58 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:31:58 [overseaSpider.pipelines] INFO: scrapy              40              items
+2021-12-30 15:31:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/agincourt-fly-away>
+None
+2021-12-30 15:31:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/the-action-rolled-gold> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:31:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:00 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/324527094/action+f2.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 279433
+2021-12-30 15:32:00 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:00 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:00 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:00 [overseaSpider.pipelines] INFO: scrapy              41              items
+2021-12-30 15:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/the-action-rolled-gold>
+None
+2021-12-30 15:32:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/doug-tuttle-pinecone> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:02 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/310066824/doug+negro.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 534835
+2021-12-30 15:32:03 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:03 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:03 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:03 [overseaSpider.pipelines] INFO: scrapy              42              items
+2021-12-30 15:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/doug-tuttle-pinecone>
+None
+2021-12-30 15:32:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/the-scruffs-teenage-tragedies-1974-1979> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:05 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/307941111/scruffs+1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 322384
+2021-12-30 15:32:05 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:05 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:05 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:05 [overseaSpider.pipelines] INFO: scrapy              43              items
+2021-12-30 15:32:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/the-scruffs-teenage-tragedies-1974-1979>
+None
+2021-12-30 15:32:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/john-paul-keith-the-rhythm-of-the-city-lp-out-19th-february> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:05 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:08 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/309368727/john+pk+azul1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 301367
+2021-12-30 15:32:08 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:08 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:08 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:08 [overseaSpider.pipelines] INFO: scrapy              44              items
+2021-12-30 15:32:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/john-paul-keith-the-rhythm-of-the-city-lp-out-19th-february>
+None
+2021-12-30 15:32:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/northern-soul-anthems-2lp-180-grs> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:10 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/308996598/NORTHERN+1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 352891
+2021-12-30 15:32:11 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:11 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:11 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:11 [overseaSpider.pipelines] INFO: scrapy              45              items
+2021-12-30 15:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/northern-soul-anthems-2lp-180-grs>
+None
+2021-12-30 15:32:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/motel-mirrors-gotta-lotta-rhythm> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:13 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/309177627/motel1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 265212
+2021-12-30 15:32:13 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:13 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:13 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:13 [overseaSpider.pipelines] INFO: scrapy              46              items
+2021-12-30 15:32:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/motel-mirrors-gotta-lotta-rhythm>
+None
+2021-12-30 15:32:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/brian-auger-brian-auger> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:16 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/308993145/brian+1.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 358211
+2021-12-30 15:32:16 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:16 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:16 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:16 [overseaSpider.pipelines] INFO: scrapy              47              items
+2021-12-30 15:32:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/brian-auger-brian-auger>
+None
+2021-12-30 15:32:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/ike-tina-turner-lps> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:16 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:18 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/312759771/IKE.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 310438
+2021-12-30 15:32:19 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:19 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:19 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:19 [overseaSpider.pipelines] INFO: scrapy              48              items
+2021-12-30 15:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/ike-tina-turner-lps>
+None
+2021-12-30 15:32:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/the-james-taylor-quartet-a-bigger-picture-lp-lp-s-sided> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:20 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/312757176/JTQ2.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 290261
+2021-12-30 15:32:21 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:21 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:21 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:21 [overseaSpider.pipelines] INFO: scrapy              49              items
+2021-12-30 15:32:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/the-james-taylor-quartet-a-bigger-picture-lp-lp-s-sided>
+None
+2021-12-30 15:32:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/ben-e-king-what-is-soul-180-grs> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:21 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:23 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2021-12-30 15:32:23 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/312816798/ben+final.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 354602
+2021-12-30 15:32:24 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2021-12-30 15:32:24 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2021-12-30 15:32:24 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 54 8192
+2021-12-30 15:32:24 [overseaSpider.pipelines] INFO: scrapy              50              items
+2021-12-30 15:32:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youarethecosmos.com/product/ben-e-king-what-is-soul-180-grs>
+None
+2021-12-30 15:32:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youarethecosmos.com/product/wreckless-eric> (referer: https://www.youarethecosmos.com/category/lp-other-labels)
+2021-12-30 15:32:24 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2021-12-30 15:32:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): assets.bigcartel.com:443
+2021-12-30 15:32:25 [urllib3.connectionpool] DEBUG: https://assets.bigcartel.com:443 "GET /product_images/310569279/wreckless.png?auto=format&fit=max&w=1500 HTTP/1.1" 200 381234
